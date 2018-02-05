@@ -1,0 +1,619 @@
+a {
+  color: #FFF; }
+  a:hover {
+    text-decoration: none;
+    color: #FFF; }
+
+.person .perDiv .four .perPhoto .icons, .footer .send .write .right {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.person .perDiv .four .perPhoto .icons div, .footer .send .write .right div {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  background-color: rgba(68, 68, 68, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #FFF; }
+
+.contaner .divContaner form input, .conImage .show-hide button, .footer .send .write .form input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 7px; }
+
+.contaner .divContaner form input[type="submit"], .conImage .show-hide button, .footer .send .write .form input[type="submit"] {
+  margin-left: 10px;
+  background-color: #f7600e;
+  border: 1px solid #f7600e; }
+
+.disBlock {
+  display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+header, .contaner, .divSlider, .footer {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover; }
+
+.hideCss {
+  display: none; }
+
+header section nav, header section .div div, header section .m .icon, .conImage .images, .conImage .show-hide, .divSlider .slider, .divSlider .slider .slid, .person .perDiv, .footer .send .write, footer div {
+  margin: auto; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+header {
+  font-size: 22px;
+  font-weight: 500;
+  color: #FFF;
+  width: 100%;
+  height: 980px;
+  background-image: url(../images/header_stock.png); }
+  header section {
+    width: 100%;
+    height: 980px;
+    background-color: rgba(51, 51, 51, 0.9); }
+    header section nav {
+      width: 55%;
+      padding-top: 10px;
+      height: 40px; }
+      header section nav .color {
+        color: #f7600e; }
+      header section nav .fa {
+        font-size: 22px;
+        font-weight: 400;
+        color: #FFF; }
+    header section ul {
+      list-style: none; }
+    header section .div div {
+      height: 870px;
+      width: 42%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 50px; }
+      header section .div div li:first-of-type {
+        font-size: 48px;
+        font-weight: 600;
+        color: #FFF; }
+        header section .div div li:first-of-type span {
+          color: #f7600e; }
+      header section .div div li:nth-of-type(2) {
+        font-size: 22px;
+        font-weight: 400;
+        color: #FFF; }
+      header section .div div li:last-of-type, header section .div div li:nth-of-type(3) {
+        display: inline-block;
+        width: 200px;
+        margin-top: 10px; }
+        header section .div div li:last-of-type button, header section .div div li:nth-of-type(3) button {
+          font-size: 14px;
+          font-weight: 200;
+          color: #FFF;
+          background-color: transparent;
+          padding: 0 60px;
+          border-radius: 15px; }
+          header section .div div li:last-of-type button:hover, header section .div div li:nth-of-type(3) button:hover {
+            background-color: #f7600e; }
+        header section .div div li:last-of-type .butI, header section .div div li:nth-of-type(3) .butI {
+          padding: 0 70.375px;
+          margin-left: -25px; }
+        header section .div div li:last-of-type .butII, header section .div div li:nth-of-type(3) .butII {
+          margin-right: -25px; }
+    header section .m {
+      height: 40px;
+      width: 100%; }
+      header section .m .icon {
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #CCC;
+        border-radius: 50%; }
+        header section .m .icon .fa {
+          padding: 12px 9px 0; }
+
+.sec {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  margin-bottom: 90px; }
+  .sec aside {
+    width: 15%;
+    text-align: center; }
+    .sec aside div:first-of-type {
+      margin: 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #333;
+      border-radius: 50%;
+      background-color: #fff;
+      font-size: 16px;
+      font-weight: 400;
+      color: #f7600e; }
+      .sec aside div:first-of-type:hover {
+        background-color: #f7600e;
+        color: #FFF; }
+    .sec aside div:nth-of-type(2) {
+      font-size: 20px;
+      font-weight: 300;
+      color: #333; }
+    .sec aside div:last-of-type {
+      font-size: 17px;
+      font-weight: 600;
+      color: #CCC;
+      line-height: 30px; }
+  .sec aside:nth-of-type(2) {
+    margin-left: 5%; }
+  .sec aside:nth-of-type(3) {
+    margin-left: 5%; }
+  .sec aside:nth-of-type(4) {
+    margin-left: 5%; }
+
+.contaner {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/subscribe.png); }
+  .contaner .divContaner {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(51, 51, 51, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .contaner .divContaner form {
+      width: 50%; }
+      .contaner .divContaner form input[type="email"] {
+        width: 400px;
+        padding-left: 20px; }
+
+.conImage {
+  width: 100%;
+  margin: 50px 0; }
+  .conImage .word {
+    width: 60%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+    margin: 20px auto; }
+    .conImage .word h3 {
+      font-size: 38px;
+      font-weight: 400;
+      color: #333; }
+      .conImage .word h3 span {
+        color: #f7600e; }
+  .conImage .images {
+    width: 60%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .conImage .images div.cover {
+      width: 32%;
+      height: 450px;
+      margin-bottom: 10px; }
+      .conImage .images div.cover img {
+        width: 100%;
+        height: 450px; }
+  .conImage .show-hide {
+    width: 60%;
+    display: flex;
+    justify-content: center; }
+    .conImage .show-hide button {
+      background-color: #FFF;
+      border: 1px solid rgba(204, 204, 204, 0.8);
+      color: #000;
+      border-radius: 15px; }
+      .conImage .show-hide button:hover {
+        background-color: #f7600e;
+        border: 1px solid #f7600e;
+        color: #FFF; }
+
+.divSlider {
+  font-size: 22px;
+  font-weight: 400;
+  color: #FFF;
+  margin: 10px 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/testimonials.png); }
+  .divSlider .slider {
+    width: 100%;
+    background-color: rgba(68, 68, 68, 0.9);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    line-height: 40px; }
+    .divSlider .slider .i {
+      width: 20%; }
+      .divSlider .slider .i i:hover {
+        color: #f7600e;
+        cursor: pointer; }
+    .divSlider .slider .slid {
+      width: 60%;
+      text-align: center; }
+      .divSlider .slider .slid img {
+        border-radius: 50%; }
+
+.person {
+  margin: 60px 0 30px;
+  line-height: 45px;
+  width: 100%; }
+  .person .perDiv {
+    width: 60%;
+    text-align: center; }
+    .person .perDiv h3 {
+      font-size: 34px;
+      font-weight: 600;
+      color: #000; }
+      .person .perDiv h3 span {
+        color: #f7600e; }
+    .person .perDiv p {
+      font-size: 22px;
+      font-weight: 400;
+      color: rgba(68, 68, 68, 0.4); }
+    .person .perDiv .four {
+      display: flex;
+      justify-content: space-between; }
+      .person .perDiv .four .perPhoto {
+        width: 24%; }
+        .person .perDiv .four .perPhoto span {
+          font-size: 19px;
+          font-weight: 600;
+          color: rgba(68, 68, 68, 0.7); }
+        .person .perDiv .four .perPhoto img {
+          width: 100%;
+          height: 300px;
+          margin-bottom: 30px; }
+        .person .perDiv .four .perPhoto p {
+          font-size: 16px;
+          font-weight: 400;
+          color: rgba(68, 68, 68, 0.4);
+          line-height: 30px;
+          margin-top: 30px; }
+
+.footer {
+  width: 100%;
+  background-image: url(../images/city.png);
+  height: 700px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFF;
+  text-align: center; }
+  .footer .send {
+    width: 100%;
+    background-color: rgba(49, 55, 61, 0.9);
+    height: 700px;
+    display: flex;
+    align-items: center; }
+    .footer .send .write {
+      width: 40%; }
+      .footer .send .write h3 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #FFF;
+        margin-bottom: 30px; }
+        .footer .send .write h3 span {
+          color: #f7600e; }
+      .footer .send .write .form {
+        color: #000; }
+        .footer .send .write .form textarea {
+          width: 100%;
+          padding-left: 5px;
+          height: 150px;
+          display: block;
+          margin: 20px 0;
+          resize: none;
+          border-radius: 10px; }
+        .footer .send .write .form input {
+          width: 49%;
+          padding: 5px;
+          margin-bottom: 15px;
+          border-radius: 10px; }
+        .footer .send .write .form input[type="submit"] {
+          border-radius: 13px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #FFF; }
+      .footer .send .write .right div {
+        width: 50px;
+        height: 50px; }
+      .footer .send .write .right div:first-of-type {
+        background-color: #3b5998; }
+      .footer .send .write .right div:nth-of-type(2) {
+        background-color: #55acee; }
+      .footer .send .write .right div:last-of-type {
+        background-color: #dc4e41; }
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(51, 51, 51, 0.9);
+  font-size: 18px;
+  font-weight: 500;
+  color: #FFF;
+  display: flex;
+  align-items: center; }
+  footer div {
+    width: 55%; }
+
+.cover {
+  position: relative; }
+
+.divHover {
+  height: 450px;
+  background-color: rgba(247, 96, 14, 0.8);
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; }
+  .divHover div h3 {
+    fontWeight: 600; }
+  .divHover div .hoverB {
+    background-color: transparent;
+    padding: 15px 50px;
+    border: 1px solid #FFF;
+    border-radius: 10px; }
+    .divHover div .hoverB:hover {
+      background-color: #FFF;
+      color: #f7600e; }
+
+.perPhoto {
+  position: relative; }
+  .perPhoto .coverPhoto {
+    height: 300px;
+    position: absolute;
+    background-color: rgba(136, 136, 136, 0.7);
+    width: 100%; }
+
+.person .perDiv .four .perPhoto:hover .coverPhoto {
+  display: none; }
+
+.person .perDiv .four .perPhoto:hover .disBlock {
+  color: #444; }
+
+.person .perDiv .four .perPhoto:hover .fac {
+  background-color: #3b5998; }
+
+.person .perDiv .four .perPhoto:hover .tw {
+  background-color: #55acee; }
+
+.person .perDiv .four .perPhoto:hover .goo {
+  background-color: #dc4e41; }
+
+@media (max-width: 1600px) {
+  header section .div div ul li:first-of-type {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FFF; }
+  header section .div div ul li:nth-of-type(2) {
+    font-size: 19px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .sec aside div:nth-of-type(2) {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333; }
+  .sec aside div:last-of-type {
+    font-size: 14px;
+    font-weight: 600;
+    color: #CCC; }
+
+  .contaner .divContaner form input {
+    width: 190px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000; }
+  .contaner .divContaner form input[type="email"] {
+    width: 380px; }
+
+  footer div {
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFF; }
+
+  .divSlider {
+    font-size: 20.5px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .person .perDiv .four .perPhoto p {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 0.4); }
+
+  .footer {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFF; }
+
+  .conImage .images .cover .divHover h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF; } }
+@media (max-width: 1360px) {
+  header section .div div ul li:first-of-type {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFF; }
+  header section .div div ul li:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .sec aside div:nth-of-type(2) {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333; }
+  .sec aside div:last-of-type {
+    font-size: 11px;
+    font-weight: 600;
+    color: #CCC; }
+
+  .contaner .divContaner form input {
+    width: 170px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #000; }
+  .contaner .divContaner form input[type="email"] {
+    width: 340px; }
+
+  footer div {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFF; }
+
+  .divSlider {
+    font-size: 19px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .person .perDiv .four .perPhoto p {
+    font-size: 4px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 0.4); }
+
+  .footer {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFF; }
+
+  .conImage .images .cover .divHover h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF; } }
+@media (max-width: 1145px) {
+  header section .div div ul li:first-of-type {
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFF; }
+  header section .div div ul li:nth-of-type(2) {
+    font-size: 13px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .sec aside div:nth-of-type(2) {
+    font-size: 11px;
+    font-weight: 300;
+    color: #333; }
+  .sec aside div:last-of-type {
+    font-size: 8px;
+    font-weight: 600;
+    color: #CCC; }
+
+  .contaner .divContaner form input {
+    width: 140px;
+    font-size: 8px;
+    font-weight: 600;
+    color: #000; }
+  .contaner .divContaner form input[type="email"] {
+    width: 280px; }
+
+  footer div {
+    font-size: 11px;
+    font-weight: 500;
+    color: #FFF; }
+
+  .divSlider {
+    font-size: 17.5px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .person .perDiv .four .perPhoto p {
+    font-size: -2px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 0.4); }
+
+  .footer {
+    font-size: 9px;
+    font-weight: 600;
+    color: #FFF; }
+
+  .conImage .images .cover .divHover h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF; } }
+@media (max-width: 940px) {
+  header section .div div ul li:first-of-type {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF; }
+  header section .div div ul li:nth-of-type(2) {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .sec aside div:nth-of-type(2) {
+    font-size: 8px;
+    font-weight: 300;
+    color: #333; }
+  .sec aside div:last-of-type {
+    font-size: 5px;
+    font-weight: 600;
+    color: #CCC; }
+
+  .contaner .divContaner form input {
+    width: 100px;
+    font-size: 5px;
+    font-weight: 600;
+    color: #000; }
+  .contaner .divContaner form input[type="email"] {
+    width: 200px; }
+
+  footer div {
+    font-size: 8px;
+    font-weight: 500;
+    color: #FFF; }
+
+  .divSlider {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF; }
+
+  .person .perDiv .four .perPhoto p {
+    font-size: -8px;
+    font-weight: 400;
+    color: rgba(68, 68, 68, 0.4); }
+
+  .footer {
+    font-size: 6px;
+    font-weight: 600;
+    color: #FFF; }
+
+  .conImage .images .cover .divHover h3 {
+    font-size: 10px;
+    font-weight: 400;
+    color: #FFF; } }
+
+/*# sourceMappingURL=style.css.map */

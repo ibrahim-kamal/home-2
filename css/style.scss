@@ -1,0 +1,576 @@
+$logocolor: #f7600e;
+$var: 1600px 1360px 1145px 940px;
+$y :  8;   //--from fl1 *4
+$l :  3;   //--from fl2 *3
+$fl1: 48;  //font size header li1
+$fl2: 22;  //font size header li2
+$inSize: 200; //width of input
+$x: 10;
+$S: 1.5;
+$u: 6;
+a{
+    color: #FFF;
+    &:hover{
+        text-decoration: none;
+        color: #FFF;
+    }
+}
+%icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%icondiv{
+    width:40px;
+    height:40px;
+    margin:2px;
+    background-color:rgba(#444,.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    color: #FFF
+}
+%button{ 
+    width:#{$inSize}px;
+    padding:10px;
+    border-radius: 7px;
+}
+%buttonI{
+    margin-left:10px;  
+    background-color:$logocolor;
+    border:1px solid $logocolor;
+}
+.disBlock{
+    display: block;
+}
+@mixin font($size,$weight,$color){
+    font-size:#{$size}px;
+    font-weight:$weight;
+    color:$color;
+}
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+%cover{
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    background-size:cover;
+}
+.hideCss{
+ display: none;
+}
+%auto{
+    margin:auto;
+}
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+header{
+    @include font(22,500,#FFF);
+    width:100%;
+    height:980px;
+    background-image:url(../images/header_stock.png);
+    @extend %cover;
+    section{
+        width:100%;
+        height:980px;
+        background-color:rgba(#333,.9);
+        nav{
+            width:55%;
+            padding-top:10px;
+            height:40px;
+            @extend %auto;
+                .color{
+                    color: $logocolor;
+                }
+                .fa{
+                  @include font(22,400,#FFF);  
+                }
+        }
+        ul{
+            list-style:none;
+        }
+        .div{
+            div{
+                height:870px;
+                width:42%;
+                @extend %auto;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                text-align: center;
+                line-height: 50px;
+                li:first-of-type{
+                   @include font($fl1,600,#FFF);
+                    span{
+                        color:$logocolor
+                    }
+            }
+
+                li:nth-of-type(2){
+                   @include font($fl2,400,#FFF);
+                }
+                li:last-of-type,li:nth-of-type(3){
+                    display:inline-block;
+                    width:200px;
+                    margin-top:10px;
+                    button{
+                       @include font(14,200,#FFF);
+                        background-color:rgba(#000,0);
+                        padding:0 60px ;
+                        border-radius:15px;
+                        &:hover{
+                        background-color:$logocolor;
+                        }
+                    }
+                    .butI{
+                       padding:0 70.375px;
+                        margin-left:-25px;
+                    }
+                    .butII{
+                        margin-right:-25px;
+                    }
+                }
+            }
+        }
+        .m{
+            height:40px;
+            width:100%;
+        .icon{
+            cursor: pointer;
+            width:50px;
+            height:50px;
+            @extend %auto;
+            border:1px solid #CCC;
+            border-radius:50%;
+            .fa{
+                padding: 12px 9px 0;
+            }
+        }
+        }
+    }
+}
+.sec{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    margin-top:90px;
+    margin-bottom: 90px;
+    aside{
+        width:15%;
+        text-align: center;
+        div:first-of-type{
+            margin: 15px auto;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:100px;
+            height:100px;
+            border:1px solid #333;
+            border-radius:50%;
+            background-color:#fff;
+           @include font($fl2 - 6,400,$logocolor);
+            &:hover{
+                background-color:$logocolor;
+                color:#FFF
+            }
+        }
+         div:nth-of-type(2){
+               @include font($fl2 - 2,300,#333); 
+            }
+        div:last-of-type{
+               @include font($fl2 - 5,600,#CCC);
+                line-height:30px
+            }
+    }
+    @for $i from 2 through 4{
+        aside:nth-of-type(#{$i}){
+            margin-left:5%;
+        }
+        }
+}
+.contaner{
+    width:100%;
+    height:300px;
+    background-image:url(../images/subscribe.png);
+    @extend %cover;
+    .divContaner{
+        width:100%;
+        height:300px;
+        background-color:rgba(#333,.9);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+       form{
+            width:50%;
+            input{
+                @extend %button;
+           }
+            input[type="submit"]{
+               @extend %buttonI;
+           }
+           input[type="email"]{
+               width:#{$inSize * 2}px;
+               padding-left:20px;
+           }
+        }
+    }
+}
+.conImage{
+    width: 100%;
+    margin:50px 0;
+    .word{
+        width:60%;
+        margin-top:30px;
+        text-align: center;
+        @include font($fl2 - 6,300,#000); 
+        margin: 20px auto;
+        h3{
+            @include font($fl1 - 10,400,#333); 
+            span{
+                color: $logocolor;
+            }
+        }
+    }
+    .images{
+        width:60%;
+        margin-bottom:30px;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        @extend %auto;
+        div.cover{
+            width:32%;
+            height:450px;
+            margin-bottom:10px; 
+            img{
+               width:100%;
+               height:450px;
+            } 
+        }
+    }
+    .show-hide{
+        width: 60%;
+        display:flex;
+        justify-content:center;
+        @extend %auto;
+        button{
+           @extend %button,%buttonI;
+            background-color:#FFF;
+            border:1px solid rgba(#CCC,.8);
+            color:#000;
+            border-radius:15px;
+            &:hover{
+                 background-color:$logocolor;
+                border:1px solid $logocolor;
+                color:#FFF; 
+            }
+        }
+    }
+}
+.divSlider{
+    @include font(22,400,#FFF);
+    margin:10px 0;
+    width:100%;
+    height:400px;
+    background-image:url(../images/testimonials.png);
+    @extend %cover;
+    .slider{
+        width:100%;
+        background-color:rgba(#444,0.9);
+        height:400px;
+        @extend %auto;
+        display: flex;
+        align-items:center;
+         line-height:40px;
+        .i{
+            width: 20%;
+            i{
+                &:hover{
+                    color:$logocolor;
+                    cursor: pointer;
+                }
+            }
+        }
+        .slid{
+            width:60%;
+            @extend %auto;
+            text-align: center;
+            img{
+                border-radius:50%;
+            }
+        }
+    }
+}
+.person{
+    margin:60px 0 30px;
+    line-height:45px;
+    width:100%;
+    .perDiv{
+        width:60%;
+        @extend %auto;
+        text-align: center;
+        h3{
+            @include font($fl1 - 14,600,#000);
+            span{
+                color:$logocolor;
+            }
+        }
+        p{
+          @include font($fl2,400,rgba(#444,.4));  
+        }
+        .four{
+            display: flex;
+            justify-content: space-between;
+            .perPhoto{
+                width:24%;
+                span{
+                    @include font($fl2 - 3,600,rgba(#444,.7));
+                }
+                img{
+                    width: 100%;
+                    height:300px;
+                    margin-bottom:30px;
+                }
+                .icons{
+                    @extend %icon;
+                    div{
+                        @extend %icondiv;
+                    }
+                }
+                p{
+                    @include font($fl2 - 6,400,rgba(#444,.4));
+                    line-height:30px;
+                    margin-top:30px;
+                }
+            }
+        }
+    }
+    
+}
+.footer{
+    width:100%;
+    background-image:url(../images/city.png);
+    @extend %cover;
+    height:700px;
+    @include font($fl2 - 4,600,#FFF);
+    text-align: center;
+    .send{
+        width:100%;
+        background-color:rgba(49, 55, 61, 0.9);
+        height:700px;
+        display:flex;
+        align-items: center;
+        .write{
+            width:40%;
+            @extend %auto;
+            h3{
+               @include font($fl1 - 8,600,#FFF);
+                margin-bottom:30px;
+                span{
+                    color:$logocolor;
+                }
+            }
+            .form{
+                color:#000;
+                textarea{
+                    width:100%;
+                    padding-left:5px;
+                    height: 150px;
+                    display: block;
+                    margin:20px 0;
+                    resize:none;
+                    border-radius:10px;
+                }
+                input{
+                    width:49%;
+                    padding:5px;
+                    margin-bottom: 15px;
+                    border-radius:10px;
+                }
+                input[type="submit"]{
+                    @extend %button,%buttonI;
+                    border-radius:13px;
+                    @include font($fl2 - 6,400,#FFF);
+                        
+                }
+            }
+            .right{
+                @extend %icon;
+                div{
+                   @extend %icondiv;
+                    width:50px;
+                    height:50px;
+                }
+                div:first-of-type{
+                    background-color: #3b5998;
+                }
+                div:nth-of-type(2){
+                    background-color: #55acee;
+                }
+                div:last-of-type{
+                    background-color: #dc4e41;
+                }
+            }
+        }
+    }
+}
+footer{
+    width:100%;
+    height: 50px;
+    background-color:rgba(#333,.9);
+    @include font($fl2 - 4,500,#FFF);
+    display: flex;
+    align-items: center;
+    div{
+        width:55%;
+        @extend %auto;
+    }
+}
+.cover{
+    position: relative;
+}
+.divHover{
+    height:450px;
+    background-color: rgba(247, 96, 14, 0.8);
+    text-align:  center;
+    color:  #FFF;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    
+    div{
+        h3{
+            fontWeight: 600
+        }
+        .hoverB{
+            background-color: transparent;
+            padding        :15px 50px;
+            border         :1px solid #FFF;
+            border-radius  : 10px ;
+            &:hover{
+                background-color: #FFF;
+                color:$logocolor;
+            }
+        }
+    }
+}
+.perPhoto{
+    position:relative;
+    .coverPhoto{
+        height: 300px;
+        position: absolute;
+        background-color: rgba(#888,0.7);
+        width: 100%;
+    }
+}
+.person .perDiv .four .perPhoto:hover .coverPhoto{
+    display: none;
+}
+.person .perDiv .four .perPhoto:hover .disBlock{
+    color:#444;
+}
+.person .perDiv .four .perPhoto:hover   .fac{
+    background-color: #3b5998;
+}
+               
+.person .perDiv .four .perPhoto:hover  .tw{
+    background-color: #55acee;
+}
+.person .perDiv .four .perPhoto:hover .goo{
+    background-color: #dc4e41;
+}
+@each $val in $var{
+    $n:index($var,$val);
+    @media (max-width: $val){
+        header{
+            section{
+                .div{
+                    div{
+                        ul{
+                            li:first-of-type{
+                                @include font($fl1 -$y*$n ,500,#FFF);
+                            }
+                            li:nth-of-type(2){
+                                @include font($fl2 -$l*$n,400,#FFF);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sec{
+            aside{
+                 div:nth-of-type(2){
+                   @include font($fl2 - 2 - $l*$n,300,#333); 
+                }
+                 div:last-of-type{
+                   @include font($fl2 - 5 -$l*$n,600,#CCC);
+                }
+            }
+        }
+        .contaner{
+            .divContaner{
+                form{
+                    $inSize: $inSize - $n*$x;
+                    input{
+                        width:#{$inSize}px;
+                        @include font($fl2 - 5 -$l*$n,600,#000);
+                    }
+                   input[type="email"]{
+                       width:#{$inSize * 2}px;
+                    }
+                }
+            }
+        }
+        footer{
+            div{
+                @include font($fl2 - 2 -$l*$n,500,#FFF);
+            }
+        }
+        .divSlider{
+            @include font(22 - $n*$S,400,#FFF);
+        }
+        .person{
+            .perDiv{
+                .four{
+                    .perPhoto{
+                        p{
+                            @include font($fl2 - 6 - $n*$u,400,rgba(#444,.4));
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            @include font($fl2 - 4 -$n*$l,600,#FFF);
+        }
+        .conImage{
+            .images{
+                .cover{
+                   .divHover{
+                       h3{
+                          @include font(10,400,#FFF); 
+                       }
+                    } 
+                }
+            }
+        }
+    }
+}
